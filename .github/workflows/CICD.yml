@@ -19,5 +19,5 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-      - name: Test API Get And Post
+      - name: Test API
         run: mvn clean verify
