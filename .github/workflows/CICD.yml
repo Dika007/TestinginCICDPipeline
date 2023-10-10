@@ -1,8 +1,8 @@
-name: Testing in CI/CD Pipeline
+name: Testing in CI/CD Pipeline 2
 
 on:
   push:
-    branches: [ CICD ]
+    branches: [ api-GetAndPush ]
   pull_request:
     branches: [ CICD ]
 
@@ -19,5 +19,5 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-      - name: Test API
+      - name: Test API 1
         run: mvn clean verify
