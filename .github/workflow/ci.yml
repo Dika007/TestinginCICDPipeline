@@ -2,9 +2,9 @@ name: Tugas Testing in CI/CD Pipeline
 
 on:
   push:
-    branches: [ test/api-GetAndPush ]
+    branches: [ CICD ]
   pull_request:
-    branches: [ test/api-GetAndPush ]
+    branches: [ CICD ]
 
 jobs:
   build:
