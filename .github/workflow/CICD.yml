@@ -1,4 +1,4 @@
-name: Tugas Testing in CI/CD Pipeline
+name: Tugas Testing in CICD Pipeline
 
 on:
   push:
@@ -19,5 +19,5 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-      - name: Test API
+      - name: Test API Aku
         run: mvn clean verify
