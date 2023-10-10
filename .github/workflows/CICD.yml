@@ -1,4 +1,4 @@
-name: Rest API
+name: Testing in CI/CD Pipeline
 
 on:
   push:
@@ -19,10 +19,5 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-  test:
-    name: Test API
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Test API
+      - name: Test API Get And Post
         run: mvn clean verify
